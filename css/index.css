@@ -1,0 +1,330 @@
+body {
+    background-image: url(../img/bgm1.jpg);
+    background-size: cover;
+    /* overflow: hidden; */
+}
+
+.mask {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+#root {
+    max-width: 1000px;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    padding: 10px;
+}
+
+td {
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+th {
+    border-bottom: 2px solid rgba(0, 0, 0, .1);
+}
+
+tbody tr:hover {
+    background: rgba(0, 0, 0, .05);
+}
+
+td img {
+    max-width: 100px;
+}
+
+.home-title {
+    color: #f6f6f6;
+    text-align: center;
+    font-size: 40px;
+}
+
+.admin-link {
+    width: 100%;
+}
+
+.admin-link a {
+    font-size: 20px;
+    padding: 10px 20px;
+    color: #ff6600;
+}
+
+.cart {
+    position: fixed;
+    z-index: 1;
+    left: auto;
+    right: auto;
+    bottom: 80px;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 500px;
+    overflow: auto;
+}
+
+.submit-order {
+    width: 100%;
+    color: #ff6600;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: rgb(100, 255, 136);
+    margin-top: 20px;
+    clear: both;
+}
+
+.cart-btn {
+    font-size: 20px;
+    background-color: #fff;
+    color: #ff6600;
+    padding: 10px 10px;
+}
+
+.input-wrap {
+    margin-bottom: 10px;
+}
+
+.input-wrap label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.admin-title {
+    text-align: center;
+    font-size: 30px;
+    color: #f6f6f6;
+}
+
+.admin {
+    padding: 30px;
+}
+
+.admin .nav {
+    background: #2c5b8d;
+    color: #fbf9f1;
+}
+
+.admin .nav a {
+    text-align: center;
+    display: block;
+    padding: 20px 0;
+    color: inherit;
+    font-size: 16px;
+}
+
+.admin .nav a:hover {
+    background: rgba(0, 0, 0, .4);
+    color: #fff;
+}
+
+.main {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+.main .table-title,
+.main .dish-title,
+.main .order-title {
+    text-align: center;
+    color: #ff6600;
+}
+
+.error {
+    background: pink;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.tool-set .sub-set {
+    margin-bottom: 10px;
+    width: 100%;
+}
+.tool-set .create-table,
+.tool-set .create-dish {
+    background-color: #fff;
+
+}
+.order-action{
+    height: 30px;
+}
+.order-delete,
+.dish-delete,
+.dish-update{
+    padding: 7px;
+    background-color: #fff;
+    border: 1px solid #aaa;
+}
+.empty-holder {
+    opacity: .5;
+    text-align: center;
+    font-size: .8rem;
+}
+
+.dish-list {}
+
+.dish-list .total-amount {
+    text-align: right;
+    width: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    color: #ff6600;
+    background-color: #f6f6f6;
+    margin: 20px 0;
+    padding: 10px 20px;
+}
+
+.dish-list .table-num {
+    font-size: 24px;
+    color: #ff6600;
+    font-weight: bold;
+}
+
+.dish-list .price {
+    color: #ff6600;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.dish {
+    border: 2px solid rgba(0, 0, 0, .4);
+    margin-bottom: 10px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+.dish>* {
+    vertical-align: middle;
+}
+
+.dish .thumbnail {
+    height: 100%;
+    padding: 30px;
+}
+
+.dish .detail {
+    padding: 10px 0;
+}
+
+.dish .detail .name {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.dish .detail .description {
+    opacity: .7;
+    padding: 15px 0;
+}
+
+.dish .amount-set input {
+    width: 60%;
+}
+
+.dish .amount-set button {
+    border: 0;
+    background-color: #ffb75e;
+}
+
+.cart-box {
+    padding: 20px 50px;
+}
+
+.cart-box .dish {
+    height: 64px;
+}
+
+.cart-box .dish .amount-set input {
+    width: 40%;
+}
+
+.cart-box .dish .detail {
+    padding-left: 10px;
+}
+
+.cart-box .dish .detail .description {
+    padding: 7px 0;
+}
+
+.cart-box .total-amount {
+    font-size: 24px;
+}
+
+.cart-box .cart-title {
+    color: #ff6600;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 24px;
+}
+
+.pager {
+    height: 24px;
+    font-size: 16px;
+    width: 33px;
+}
+
+.tabbar {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.tabbar>* {
+    vertical-align: middle;
+}
+
+.tabbar button {
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding: 5px 8px;
+    background-color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+
+.prepage:hover,
+.nextpage:hover,
+.firstpage:hover,
+.lastpage:hover {
+    border: 1px solid rgb(0, 194, 71);
+}
+
+.prepage,
+.nextpage,
+.firstpage,
+.lastpage {
+    color: #ff6600;
+}
+
+.prepage[disabled],
+.nextpage[disabled],
+.firstpage[disabled],
+.lastpage[disabled] {
+    color: #fdb88a;
+    border: 1px solid #ccc;
+}
+
+.paging {
+    display: inline-block;
+}
+
+.paging button {
+    color: #ff6600;
+    background-color: #f6f6f6;
+    border: 1px solid #fdb88a;
+    font-size: 16px;
+    height: 30.4px;
+}
+
+.currentpage,
+.totalpage {
+    color: #aaa;
+}
+
+.tabbar .paging .active {
+    color: #f6f6f6;
+    background-color: #ff6600;
+}
